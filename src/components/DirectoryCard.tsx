@@ -28,7 +28,7 @@ export function DirectoryCard({ item }: DirectoryCardProps) {
 
         <CardHeader className="p-4 sm:p-5 flex flex-col gap-1.5 flex-1 pl-5 sm:pl-6">
           <div className="flex items-start justify-between gap-3">
-            <CardTitle className="text-base sm:text-lg font-bold text-zinc-900 group-hover:text-up-maroon transition-colors leading-tight line-clamp-2 font-heading">
+            <CardTitle className="text-base sm:text-lg font-bold text-zinc-900 group-hover:text-up-maroon transition-colors leading-tight font-heading">
               {item.name}
             </CardTitle>
             <div className="w-6 h-6 rounded-full bg-up-green/5 flex items-center justify-center shrink-0 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
@@ -45,7 +45,7 @@ export function DirectoryCard({ item }: DirectoryCardProps) {
               </svg>
             </div>
           </div>
-          <CardDescription className="text-xs sm:text-sm text-zinc-500 font-sans leading-relaxed line-clamp-3 mt-1 font-medium group-hover:text-zinc-600 transition-colors">
+          <CardDescription className="text-xs sm:text-sm text-zinc-500 font-sans leading-relaxed mt-1 font-medium group-hover:text-zinc-600 transition-colors">
             {item.description}
           </CardDescription>
         </CardHeader>

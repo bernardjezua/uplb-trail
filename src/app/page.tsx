@@ -9,7 +9,7 @@ import { BackToTopButton } from "@/components/BackToTopButton";
 import Image from "next/image";
 import Link from "next/link";
 import Fuse from "fuse.js";
-import { Globe, Heart } from "lucide-react";
+import { Globe } from "lucide-react";
 
 interface CategoryData {
   category: string;
@@ -28,73 +28,107 @@ export default function Home() {
   const fuse = useMemo(() => {
     return new Fuse(flatLinks, {
       keys: [
-        { name: "name", weight: 3 },
+        { name: "name", weight: 5 },
         { name: "description", weight: 1 },
-        { name: "category", weight: 0.5 },
       ],
-      threshold: 0.2,
-      ignoreLocation: true,
+      threshold: 0.3,
+      distance: 100,
+      ignoreLocation: false,
+      includeScore: true,
       useExtendedSearch: true,
+      findAllMatches: true,
+      minMatchCharLength: 2,
     });
   }, [flatLinks]);
 
   const filteredData = useMemo(() => {
-    if (!searchQuery.trim()) {
+    const trimmedQuery = searchQuery.trim().toLowerCase();
+    
+    if (!trimmedQuery) {
       return (uplbLinksData as CategoryData[]).map((section) => ({
         ...section,
         links: [...section.links].sort((a, b) => a.name.localeCompare(b.name)),
       }));
     }
 
-    // Use extended search to optionally force exact matching if they type an exact acronym
-    const exactQuery = `="${searchQuery}"`;
-    let results = fuse.search(exactQuery);
+    // Rule 4: Tokenized multi-word search
+    // We use space as a separator. Fuse's extended search with ' can handle AND logic.
+    const tokens = trimmedQuery.split(/\s+/).filter(t => t.length > 0);
+    const searchString = tokens.map(t => `'${t}`).join(' '); // ' prefix means include-match (AND)
     
-    // Fallback to fuzzy if no exact matches found
+    let results = fuse.search(searchString);
+    
+    // Fallback to standard fuzzy if extended search is too restrictive
     if (results.length === 0) {
-      results = fuse.search(searchQuery);
+      results = fuse.search(trimmedQuery);
     }
 
-    const grouped = new Map<string, LinkItem[]>();
-    const scoreMap = new Map<string, number>();
+    const grouped = new Map<string, (LinkItem & { finalScore: number })[]>();
 
-    results.forEach((result, index) => {
+    results.forEach((result) => {
       const item = result.item;
-      // Use the actual sorted index from Fuse (which is highly relevant) as the primary sort key
-      // If score is missing, rely on the index to preserve Fuse's internal ordering
-      scoreMap.set(item.name + item.category, result.score || (index / 100));
+      const name = item.name.toLowerCase();
+      const desc = item.description.toLowerCase();
+      
+      // Rule 6: Relevance Scoring
+      // Fuse score is 0 to 1 (0 is best). We'll invert or adjust it.
+      let finalScore = result.score || 1;
 
-      if (!grouped.has(item.category)) {
-        grouped.set(item.category, []);
+      // Rule 1 & 2: Prioritize Exact/Word matches in Name
+      if (name === trimmedQuery) {
+        finalScore *= 0.001; // Massive boost for exact full name match
+      } else if (name.includes(trimmedQuery)) {
+        finalScore *= 0.1; // Big boost for substring match in name
+      } else if (tokens.every(t => name.includes(t) || desc.includes(t))) {
+        finalScore *= 0.5; // Boost if all tokens are matched across name/description
       }
-      grouped.get(item.category)!.push({
+
+      // Rule 5: Prefix matching boost
+      if (name.startsWith(trimmedQuery)) {
+        finalScore *= 0.8;
+      }
+
+      const category = item.category;
+      if (!grouped.has(category)) {
+        grouped.set(category, []);
+      }
+      
+      grouped.get(category)!.push({
         name: item.name,
         url: item.url,
         description: item.description,
+        finalScore: finalScore,
       });
     });
 
     // Score each category based on the BEST matching item inside it
     const categoryScores = new Map<string, number>();
     for (const [category, links] of grouped.entries()) {
-      const bestScore = Math.min(...links.map(l => scoreMap.get(l.name + category) || 1));
+      const bestScore = Math.min(...links.map(l => l.finalScore));
       categoryScores.set(category, bestScore);
     }
 
-    return (uplbLinksData as CategoryData[])
+    const categoriesWithLinks = (uplbLinksData as CategoryData[])
       .map((section) => {
         const links = grouped.get(section.category);
-        if (links) {
+        if (links && links.length > 0) {
           return {
             category: section.category,
-            // Sort links inside the category purely by their Fuse relevance score
-            links: links.sort((a, b) => (scoreMap.get(a.name + section.category) || 1) - (scoreMap.get(b.name + section.category) || 1)),
+            // Rule 6: Sort by finalScore, then alphabetical name
+            links: links.sort((a, b) => {
+              if (a.finalScore !== b.finalScore) {
+                return a.finalScore - b.finalScore;
+              }
+              return a.name.localeCompare(b.name);
+            }),
             bestScore: categoryScores.get(section.category) || 1
           };
         }
         return null;
       })
-      .filter((section): section is (CategoryData & { bestScore: number }) => section !== null)
+      .filter((section): section is { category: string; links: (LinkItem & { finalScore: number })[]; bestScore: number } => section !== null);
+
+    return categoriesWithLinks
       // Sort the rendered categories so the one containing the *absolute best match* appears at the VERY TOP
       .sort((a, b) => a.bestScore - b.bestScore)
       .map(section => ({ category: section.category, links: section.links }));
@@ -105,29 +139,30 @@ export default function Home() {
     <div className="selection:bg-up-maroon/20 flex flex-col flex-1">
       <Navbar />
       {/* Hero / About Section - Full Width */}
-      <section id="about" className="w-full flex flex-col lg:flex-row min-h-[300px] lg:min-h-[380px] animate-in fade-in slide-in-from-top-4 duration-700">
-        <div className="lg:w-1/2 relative min-h-[350px] lg:min-h-[550px]">
+      <section id="about" className="w-full relative min-h-[280px] lg:min-h-[380px] flex items-center justify-center overflow-hidden animate-in fade-in slide-in-from-top-4 duration-700 bg-zinc-900 text-white">
+        {/* Background Image Container */}
+        <div className="absolute inset-0 pointer-events-none">
           <Image 
             src="/img/trail.jpg" 
             alt="UPLB TRAIL - Terminal for Resource Access and Information Links" 
             fill
-            sizes="50vw"
-            className="object-cover"
+            sizes="100vw"
+            className="object-cover opacity-60"
             priority
           />
-          {/* Subtle gradient for contrast without text overlay */}
-          <div className="absolute inset-0 bg-linear-to-t from-up-green/70 via-up-green/10 to-transparent pointer-events-none" />
+          {/* Branded Overlays for Readability */}
+          <div className="absolute inset-0 bg-zinc-900/50" />
+          <div className="absolute inset-0 bg-linear-to-t from-up-green/70 via-up-green/20 to-transparent" />
         </div>
-        <div className="lg:w-1/2 p-6 sm:p-8 lg:p-12 xl:p-16 flex flex-col justify-center bg-neutral-100 border-b lg:border-b-0 lg:border-l border-zinc-200/60">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold font-heading text-zinc-900 tracking-tight mb-4 lg:mb-6 leading-tight">
+
+        {/* Centered Content Overlay */}
+        <div className="z-10 px-6 sm:px-8 lg:px-12 py-12 max-w-4xl text-center text-white">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold font-heading tracking-tight mb-4 lg:mb-6 leading-tight drop-shadow-md">
             Finding UPLB links should be easy.
           </h1>
-          <div className="space-y-4 text-zinc-600 text-sm sm:text-base lg:text-lg leading-relaxed font-heading">
+          <div className="space-y-4 text-sm sm:text-base lg:text-lg leading-relaxed font-heading max-w-2xl mx-auto drop-shadow-sm">
             <p>
-              <strong className="text-up-green">TRAIL</strong> (Terminal for Resource Access and Information Links) was built to solve the hassle of looking at social media posts, outdated directories, and search engine clutter just to find the right office or portal.
-            </p>
-            <p>
-              Here, every essential link is unified and instantly searchable, to save your valuable time.
+              <strong className="text-white font-bold underline decoration-up-maroon decoration-2 underline-offset-4">TRAIL</strong> (Terminal for Resource Access and Information Links) was built to solve the hassle of looking at social media, outdated directories, and search engine clutter. Every link is instantly searchable to save your time.
             </p>
           </div>
         </div>
@@ -265,7 +300,7 @@ export default function Home() {
               Developer&apos;s Website
             </span>
             <span className="font-bold text-[10px] uppercase tracking-wider font-sans transition-colors whitespace-nowrap sm:hidden">
-              Developer's Website
+              Developer&apos;s Website
             </span>
           </Link>
         </div>

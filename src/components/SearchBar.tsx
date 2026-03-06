@@ -33,11 +33,11 @@ export function SearchBar({ value, onChange }: SearchBarProps) {
         <Input
           type="search"
           id="search"
-          className="w-full rounded-full pl-11 sm:pl-12 h-12 sm:h-14 text-sm sm:text-base bg-white/90 backdrop-blur-xl border border-zinc-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all ring-0! ring-offset-0! focus-visible:ring-0! focus-visible:ring-offset-0! focus-visible:border-up-maroon/50 focus-visible:shadow-[0_8px_30px_rgb(123,17,19,0.15)] placeholder:text-zinc-500 font-medium"
-          placeholder="Search for colleges, institutes/departments, or offices"
+          className="w-full rounded-full pl-11 sm:pl-12 h-12 sm:h-14 text-base sm:text-sm bg-white/90 backdrop-blur-xl border border-zinc-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all ring-0! ring-offset-0! focus-visible:ring-0! focus-visible:ring-offset-0! focus-visible:border-up-maroon/50 focus-visible:shadow-[0_8px_30px_rgb(123,17,19,0.15)] placeholder:text-zinc-500 placeholder:text-sm sm:placeholder:text-sm font-medium"
+          placeholder="Search through UPLB websites"
           value={value}
           onChange={onChange}
-          aria-label="Search through UPLB directories"
+          aria-label="Search through UPLB websites"
         />
       </div>
     </div>
