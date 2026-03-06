@@ -1,0 +1,812 @@
+[
+  {
+    "category": "Main Portals",
+    "links": [
+      {
+        "name": "AMIS",
+        "url": "https://amis.uplb.edu.ph",
+        "description": "Academic Management Information System"
+      },
+      {
+        "name": "UPLB Main Website",
+        "url": "https://uplb.edu.ph",
+        "description": "The official website of the University of the Philippines Los Baños."
+      },
+      {
+        "name": "UP Mail",
+        "url": "https://mail.up.edu.ph",
+        "description": "Access to your official UP Email account (@up.edu.ph)."
+      }
+    ]
+  },
+  {
+    "category": "Major Offices & Services",
+    "links": [
+      {
+        "name": "OC",
+        "url": "https://uplb.edu.ph/oc/",
+        "description": "Office of the Chancellor"
+      },
+      {
+        "name": "OUR",
+        "url": "https://our.uplb.edu.ph",
+        "description": "Office of the University Registrar"
+      },
+      {
+        "name": "OVCAA",
+        "url": "https://ovcaa.uplb.edu.ph",
+        "description": "Office of the Vice Chancellor for Academic Affairs"
+      },
+      {
+        "name": "OVCCA",
+        "url": "https://ovcca.uplb.edu.ph",
+        "description": "Office of the Vice Chancellor for Community Affairs"
+      },
+      {
+        "name": "OVCSA",
+        "url": "https://ovcsa.uplb.edu.ph",
+        "description": "Office of the Vice Chancellor for Student Affairs"
+      },
+      {
+        "name": "OVCRE",
+        "url": "https://ovcre.uplb.edu.ph",
+        "description": "Office of the Vice Chancellor for Research and Extension."
+      },
+      {
+        "name": "OVCPD",
+        "url": "https://www.facebook.com/uplbovcpd/",
+        "description": "Office of the Vice Chancellor for Planning and Development."
+      },
+      {
+        "name": "OVCA",
+        "url": "https://ovca.uplb.edu.ph",
+        "description": "Office of the Vice Chancellor for Administration."
+      },
+      {
+        "name": "Main Library",
+        "url": "https://library.uplb.edu.ph",
+        "description": "University Library and online database access."
+      },
+      {
+        "name": "UPLB Directory",
+        "url": "https://directory.uplb.edu.ph/",
+        "description": "Official UPLB contact information directory."
+      },
+      {
+        "name": "UHS",
+        "url": "https://www.facebook.com/uplbuhs/",
+        "description": "University Health Service. Provides medical consultations and services for the UPLB community."
+      },
+      {
+        "name": "SLAS",
+        "url": "https://slasonline.up.edu.ph",
+        "description": "Student Learning Assistance System for financial assistance."
+      }
+    ]
+  },
+  {
+    "category": "Colleges & Schools",
+    "links": [
+      {
+        "name": "CAFS",
+        "url": "https://cafs.uplb.edu.ph",
+        "description": "College of Agriculture and Food Science"
+      },
+      {
+        "name": "CAS",
+        "url": "https://cas.uplb.edu.ph",
+        "description": "College of Arts and Sciences"
+      },
+      {
+        "name": "CDC",
+        "url": "https://cdc.uplb.edu.ph",
+        "description": "College of Development Communication"
+      },
+      {
+        "name": "CEAT",
+        "url": "https://ceat.uplb.edu.ph",
+        "description": "College of Engineering and Agro-Industrial Technology"
+      },
+      {
+        "name": "CEM",
+        "url": "https://cem.uplb.edu.ph",
+        "description": "College of Economics and Management"
+      },
+      {
+        "name": "CFNR",
+        "url": "https://cfnr.uplb.edu.ph",
+        "description": "College of Forestry and Natural Resources"
+      },
+      {
+        "name": "CHE",
+        "url": "https://che.uplb.edu.ph",
+        "description": "College of Human Ecology"
+      },
+      {
+        "name": "CPAf",
+        "url": "https://cpaf.uplb.edu.ph",
+        "description": "College of Public Affairs and Development"
+      },
+      {
+        "name": "CVM",
+        "url": "https://cvm.uplb.edu.ph",
+        "description": "College of Veterinary Medicine"
+      },
+      {
+        "name": "GS",
+        "url": "https://gs.uplb.edu.ph",
+        "description": "Graduate School (Masters and PhD programs)"
+      }
+    ]
+  },
+  {
+    "category": "Departments, Institutes & Units Under CAFS",
+    "links": [
+      {
+        "name": "ASI",
+        "url": "https://asi.cafs.uplb.edu.ph/",
+        "description": "Agricultural Systems Institute"
+      },
+      {
+        "name": "IAS",
+        "url": "https://ias.uplb.edu.ph/",
+        "description": "Institute of Animal Science"
+      },
+      {
+        "name": "ICropS",
+        "url": "https://icrops.uplb.edu.ph/",
+        "description": "Institute of Crop Science"
+      },
+      {
+        "name": "IFST",
+        "url": "https://ifst.uplb.edu.ph/",
+        "description": "Institute of Food Science and Technology"
+      },
+      {
+        "name": "IWEP",
+        "url": "https://iwep.cafs.uplb.edu.ph/",
+        "description": "Institute of Weed Science, Entomology, and Plant Pathology"
+      },
+      {
+        "name": "IPB",
+        "url": "https://ipb.cafs.uplb.edu.ph/",
+        "description": "Institute of Plant Breeding"
+      },
+      {
+        "name": "PHTRC",
+        "url": "https://phtrc.uplb.edu.ph/",
+        "description": "Postharvest Horticulture Training and Research Center"
+      },
+      {
+        "name": "NCPC",
+        "url": "https://ncpc.cafs.uplb.edu.ph/",
+        "description": "National Crop Protection Center"
+      },
+      {
+        "name": "DTRI",
+        "url": "https://dtri.cafs.uplb.edu.ph/",
+        "description": "Dairy Training and Research Institute"
+      },
+      {
+        "name": "CAFS-OCS Website",
+        "url": "https://cem.uplb.edu.ph/about/office-of-the-college-secretary/",
+        "description": "CAFS College Secretary"
+      },
+      {
+        "name": "CAFS-OCS FB Page",
+        "url": "https://www.facebook.com/uplbcafsocs/",
+        "description": "CAFS College Secretary"
+      },
+      {
+        "name": "CAFS-OD",
+        "url": "https://cafs.uplb.edu.ph/units/office-of-the-dean",
+        "description": "CAFS Office of the Dean"
+      }
+    ]
+  },
+  {
+    "category": "Departments, Institutes & Units Under CAS",
+    "links": [
+      {
+        "name": "IBS",
+        "url": "https://ibs.cas.uplb.edu.ph/",
+        "description": "Institute of Biological Sciences"
+      },
+      {
+        "name": "IC",
+        "url": "https://ic.cas.uplb.edu.ph/",
+        "description": "Institute of Chemistry"
+      },
+      {
+        "name": "ICS",
+        "url": "https://ics.uplb.edu.ph/",
+        "description": "Institute of Computer Science"
+      },
+      {
+        "name": "IMS",
+        "url": "https://ims.uplb.edu.ph/",
+        "description": "Institute of Mathematical Sciences"
+      },
+      {
+        "name": "INSTAT",
+        "url": "https://instat.uplb.edu.ph/",
+        "description": "Institute of Statistics"
+      },
+      {
+        "name": "IoP",
+        "url": "https://www.facebook.com/iopcasuplb",
+        "description": "Institute of Physics"
+      },
+      {
+        "name": "DHUM",
+        "url": "https://dhum.uplb.edu.ph/",
+        "description": "Department of Humanities"
+      },
+      {
+        "name": "DSS",
+        "url": "https://dss.cas.uplb.edu.ph/",
+        "description": "Department of Social Sciences"
+      },
+      {
+        "name": "DHK",
+        "url": "https://www.facebook.com/officialDHKUPLB/",
+        "description": "Department of Human Kinetics"
+      },
+      {
+        "name": "UPRHS",
+        "url": "https://uprhs.uplb.edu.ph/",
+        "description": "UP Rural High School"
+      },
+      {
+        "name": "CAS-OCS Website",
+        "url": "https://cas.uplb.edu.ph/cas-ocs/",
+        "description": "CAS College Secretary"
+      },
+      {
+        "name": "CAS-OCS FB Page",
+        "url": "https://www.facebook.com/uplbcas.ocs",
+        "description": "CAS College Secretary"
+      },
+      {
+        "name": "CAS-OD ",
+        "url": "https://cas.uplb.edu.ph/units/office-of-the-dean",
+        "description": "CAS Office of the Dean"
+      }
+    ]
+  },
+  {
+    "category": "Departments, Institutes & Units Under CDC",
+    "links": [
+      {
+        "name": "DDBT",
+        "url": "https://www.facebook.com/uplbDDBT/",
+        "description": "Department of Development Broadcasting and Telecommunication"
+      },
+      {
+        "name": "DDJ",
+        "url": "https://cdc.uplb.edu.ph/department-of-development-journalism/",
+        "description": "Department of Development Journalism"
+      },
+      {
+        "name": "DEC",
+        "url": "https://cdc.uplb.edu.ph/department-of-educational-communication/",
+        "description": "Department of Educational Communication"
+      },
+      {
+        "name": "DSC",
+        "url": "https://www.facebook.com/digitalscicom/",
+        "description": "Department of Science Communication"
+      },
+      {
+        "name": "MyDevcom",
+        "url": "https://sites.google.com/up.edu.ph/my-devcom/ocs-online",
+        "description": "CDC College Secretary (OCS) Website"
+      },
+      {
+        "name": "CDC-OCS FB Group",
+        "url": "https://www.facebook.com/groups/221438964714830/",
+        "description": "CDC College Secretary Facebook Group"
+      }
+    ]
+  },
+  {
+    "category": "Departments, Institutes & Units Under CEAT",
+    "links": [
+      {
+        "name": "DCE",
+        "url": "https://dce.uplb.edu.ph/",
+        "description": "Department of Civil Engineering"
+      },
+      {
+        "name": "DChE",
+        "url": "https://dche.uplb.edu.ph/",
+        "description": "Department of Chemical Engineering"
+      },
+      {
+        "name": "DEE",
+        "url": "https://dee.uplb.edu.ph/",
+        "description": "Department of Electrical Engineering"
+      },
+      {
+        "name": "DES",
+        "url": "https://des.uplb.edu.ph/",
+        "description": "Department of Engineering Science"
+      },
+      {
+        "name": "DIE",
+        "url": "https://ied.uplb.edu.ph/",
+        "description": "Department of Industrial Engineering"
+      },
+      {
+        "name": "IABE",
+        "url": "https://iabe.uplb.edu.ph/",
+        "description": "Institute of Agricultural and Biosystems Engineering"
+      },
+      {
+        "name": "BIOMECH",
+        "url": "https://biomech.uplb.edu.ph/",
+        "description": "Center for Agri-Fisheries and Biosystems Mechanization"
+      },
+      {
+        "name": "AMTEC",
+        "url": "https://amtec.uplb.edu.ph/",
+        "description": "Agricultural Machinery Testing and Evaluation Center"
+      },
+      {
+        "name": "CEAT-OCS Website",
+        "url": "https://ceatocs.uplb.edu.ph/",
+        "description": "CEAT College Secretary"
+      },
+      {
+        "name": "CEAT-OCS FB Page",
+        "url": "https://www.facebook.com/UPLBCEATOCS",
+        "description": "CEAT College Secretary"
+      },
+      {
+        "name": "CEAT-OD",
+        "url": "https://ceat.uplb.edu.ph/uncategorized/deans-office/",
+        "description": "CEAT Office of the Dean"
+      },
+      {
+        "name": "CEAT Library",
+        "url": "https://www.facebook.com/uplbceatlibrary/",
+        "description": "The official page of the CEAT Library."
+      }
+    ]
+  },
+  {
+    "category": "Departments, Institutes & Units Under CEM",
+    "links": [
+      {
+        "name": "DAAE",
+        "url": "https://www.facebook.com/uplbdaae/",
+        "description": "Department of Agricultural and Applied Economics"
+      },
+      {
+        "name": "DE",
+        "url": "https://www.facebook.com/uplbde/",
+        "description": "Department of Economics"
+      },
+      {
+        "name": "DAME",
+        "url": "https://www.facebook.com/dameuplb/",
+        "description": "Department of Agribusiness Management and Entrepreneurship"
+      },
+      {
+        "name": "ICOPED",
+        "url": "http://icoped.com",
+        "description": "Institute of Cooperatives and Bio-Enterprise Development"
+      },
+      {
+        "name": "ACE",
+        "url": "https://cem.uplb.edu.ph/about/cem-units/up-ace/",
+        "description": "Agribusiness Center for Entrepreneurship"
+      },
+      {
+        "name": "CEM Library",
+        "url": "https://uplbcemlibrary.com",
+        "description": "CEM Library is located in REDREC or the Rural Economic Development and Renewable Energy Policy Center."
+      },
+      {
+        "name": "CEM-OCS Website",
+        "url": "https://cem.uplb.edu.ph/about/office-of-the-college-secretary/",
+        "description": "CEM College Secretary"
+      },
+      {
+        "name": "CEM-OCS FB Page",
+        "url": "https://www.facebook.com/uplbcemocs/",
+        "description": "CEM College Secretary"
+      },
+      {
+        "name": "CEM-OD",
+        "url": "https://cem.uplb.edu.ph/units/office-of-the-dean",
+        "description": "CEM Office of the Dean"
+      }
+    ]
+  },
+  {
+    "category": "Departments, Institutes & Units Under CFNR",
+    "links": [
+      {
+        "name": "FBS",
+        "url": "https://cfnr.uplb.edu.ph",
+        "description": "Department of Forest Biological Sciences"
+      },
+      {
+        "name": "FPPS",
+        "url": "https://fpps.uplb.edu.ph/",
+        "description": "Department of Forest Products and Paper Science"
+      },
+      {
+        "name": "DSFFG",
+        "url": "https://www.facebook.com/dsffgcfnr/",
+        "description": "Department of Social Forestry and Forest Governance"
+      },
+      {
+        "name": "IRNR",
+        "url": "https://irnr.uplb.edu.ph/",
+        "description": "Institute of Renewable Natural Resources"
+      },
+      {
+        "name": "FDC",
+        "url": "https://fdc.cfnr.uplb.edu.ph/",
+        "description": "Forestry Development Center"
+      },
+      {
+        "name": "MCME",
+        "url": "https://www.facebook.com/makilingcenter/",
+        "description": "Makiling Center for Mountain Ecosystems"
+      },
+      {
+        "name": "MBG",
+        "url": "https://www.facebook.com/makilingbotanicgardens/",
+        "description": "Makiling Botanic Gardens"
+      },
+      {
+        "name": "CFNR-OCS Website",
+        "url": "https://cfnr.uplb.edu.ph/ocs/",
+        "description": "CFNR College Secretary"
+      },
+      {
+        "name": "CFNR-OCS FB Page",
+        "url": "https://www.facebook.com/uplbcfnrocs/",
+        "description": "CFNR College Secretary"
+      },
+      {
+        "name": "CFNR-OD",
+        "url": "https://cfnr.uplb.edu.ph/units/office-of-the-dean",
+        "description": "CFNR Office of the Dean"
+      }
+    ]
+  },
+  {
+    "category": "Departments, Institutes & Units Under CHE",
+    "links": [
+      {
+        "name": "DCERP",
+        "url": "https://dcerp.che.uplb.edu.ph/",
+        "description": "Department of Community and Environmental Resource Planning"
+      },
+      {
+        "name": "DHFDS",
+        "url": "https://che.uplb.edu.ph",
+        "description": "Department of Human and Family Development Studies"
+      },
+      {
+        "name": "DSDS",
+        "url": "https://dsds.che.uplb.edu.ph/",
+        "description": "Department of Social Development Services"
+      },
+      {
+        "name": "IHNF",
+        "url": "https://ihnf.uplb.edu.ph/",
+        "description": "Institute of Human Nutrition and Food"
+      },
+      {
+        "name": "CHE-OCS FB Page",
+        "url": "https://www.facebook.com/UPLBCHEOCS/",
+        "description": "CHE College Secretary"
+      },
+      {
+        "name": "CHE-OD",
+        "url": "https://che.uplb.edu.ph/units/office-of-the-dean",
+        "description": "CHE Office of the Dean"
+      },
+      {
+        "name": "CHE Library",
+        "url": "https://www.facebook.com/fbUPLBCHELibrary/",
+        "description": "The official page of the CHE Library."
+      }
+    ]
+  },
+  {
+    "category": "Departments, Institutes & Units Under CPAf",
+    "links": [
+      {
+        "name": "IGRD",
+        "url": "https://cpaf.uplb.edu.ph/about/units-and-offices/institute-of-governance-and-development/",
+        "description": "Institute for Governance and Rural Development"
+      },
+      {
+        "name": "CISC",
+        "url": "https://cpaf.uplb.edu.ph/about/units-and-offices/community-innovations-studies-center/",
+        "description": "Community Innovations Studies Center"
+      },
+      {
+        "name": "CSPPS",
+        "url": "https://cpaf.uplb.edu.ph/about/units-and-offices/center-for-strategic-planning-and-policy-studies/",
+        "description": "Center for Strategic Planning and Policy Studies"
+      },
+      {
+        "name": "KMO",
+        "url": "https://cpaf.uplb.edu.ph/about/units-and-offices/knowledge-management-office/",
+        "description": "Knowledge Management Office"
+      },
+      {
+        "name": "CPAF-OD",
+        "url": "https://cpaf.uplb.edu.ph/about/units-and-offices/office-of-the-dean/",
+        "description": "CPAF Office of the Dean"
+      }
+    ]
+  },
+  {
+    "category": "Departments, Institutes & Units Under CVM",
+    "links": [
+      {
+        "name": "AdSO",
+        "url": "https://cvm.uplb.edu.ph/about/administrative-services-office/",
+        "description": "Administrative Services Office"
+      },
+      {
+        "name": "DBVS",
+        "url": "https://cvm.uplb.edu.ph/faculty-reps-and-staff/department-of-basic-veterinary-sciences/",
+        "description": "Department of Basic Veterinary Sciences"
+      },
+      {
+        "name": "DVPS",
+        "url": "https://cvm.uplb.edu.ph/faculty-reps-and-staff/department-of-veterinary-paraclinical-sciences/",
+        "description": "Department of Veterinary Paraclinical Sciences"
+      },
+      {
+        "name": "DVCS",
+        "url": "https://cvm.uplb.edu.ph/faculty-reps-and-staff/department-of-veterinary-clinical-sciences/",
+        "description": "Department of Veterinary Clinical Sciences"
+      },
+      {
+        "name": "VTH",
+        "url": "https://www.facebook.com/uplbvthsas/",
+        "description": "Veterinary Teaching Hospital"
+      },
+      {
+        "name": "VPRF",
+        "url": "https://cvm.uplb.edu.ph/resources-and-facilities/veterinary-pathology-research-facility/",
+        "description": "Veterinary Pathology Resource Facility"
+      },
+      {
+        "name": "CVM-OCS Website",
+        "url": "https://cvm.uplb.edu.ph/students/office-of-the-college-secretary/",
+        "description": "CVM College Secretary"
+      },
+      {
+        "name": "CVM-OCS FB Page",
+        "url": "https://www.facebook.com/CVMOCSUPLB/",
+        "description": "CVM College Secretary"
+      },
+      {
+        "name": "CVM-OD",
+        "url": "https://cvm.uplb.edu.ph/units/office-of-the-dean",
+        "description": "CVM Office of the Dean"
+      },
+      {
+        "name": "CVM/IAS-CAFS Library",
+        "url": "https://www.facebook.com/uplbcvmiaslib",
+        "description": "The official page of the CVM / IAS-CAFS Library."
+      }
+    ]
+  },
+  {
+    "category": "Units Under OC",
+    "links": [
+      {
+        "name": "Legal Office",
+        "url": "https://legal.uplb.edu.ph/",
+        "description": "Primary unit for legal counsel within the university."
+      },
+      {
+        "name": "OAR",
+        "url": "https://oar.uplb.edu.ph/",
+        "description": "Office of Alumni Relations"
+      },
+      {
+        "name": "OASH",
+        "url": "https://www.facebook.com/UPLB.OASH/",
+        "description": "Office of Anti-Sexual Harassment"
+      },
+      {
+        "name": "OIL",
+        "url": "https://international.uplb.edu.ph/",
+        "description": "Office of International Linkages"
+      },
+      {
+        "name": "OICA",
+        "url": "https://www.facebook.com/UPLBOICA2007/",
+        "description": "Office for Initiatives in Culture and the Arts"
+      },
+      {
+        "name": "OIDHE",
+        "url": "https://www.facebook.com/UPLB.OIDHE/",
+        "description": "Office for Institutional Development in Higher Education"
+      },
+      {
+        "name": "QAO",
+        "url": "https://www.facebook.com/UPLBQAO",
+        "description": "Quality Assurance Office"
+      },
+      {
+        "name": "OVCIEM",
+        "url": "https://www.facebook.com/profile.php?id=61583044996891",
+        "description": "Office of the Vice Chancellor for Innovation and Enterprise Management"
+      },
+      {
+        "name": "Ugnayan ng Pahinungod",
+        "url": "https://pahinungod.uplb.edu.ph/",
+        "description": "The official volunteer service arm of UPLB."
+      }
+    ]
+  },
+  {
+    "category": "Units Under OVCA",
+    "links": [
+      {
+        "name": "Accounting Office",
+        "url": "https://ovca.uplb.edu.ph/about-accounting-office/",
+        "description": "UPLB Accounting Office"
+      },
+      {
+        "name": "Business Affairs Office",
+        "url": "https://www.facebook.com/UPLBBusinessAffairsOffice/",
+        "description": "UPLB Business Affairs Office"
+      },
+      {
+        "name": "Cashier's Office",
+        "url": "https://www.facebook.com/UPLBCashiersOffice/",
+        "description": "UPLB Cashier's Office"
+      },
+      {
+        "name": "HRDO",
+        "url": "https://hrdo.uplb.edu.ph/",
+        "description": "Human Resources Development Office"
+      },
+      {
+        "name": "RMO",
+        "url": "https://rmo.uplb.edu.ph/",
+        "description": "Records Management Office"
+      },
+      {
+        "name": "SPMO",
+        "url": "https://ovca.uplb.edu.ph/supply-and-property-management-office/",
+        "description": "Supply and Property Management Office"
+      }
+    ]
+  },
+  {
+    "category": "Units Under OVCAA",
+    "links": [
+      {
+        "name": "GEP",
+        "url": "https://ovcaa.uplb.edu.ph/units/ge-program/",
+        "description": "General Education Program"
+      },
+      {
+        "name": "CATL",
+        "url": "https://catl.uplb.edu.ph/",
+        "description": "Center for the Advancement of Teaching and Learning"
+      },
+      {
+        "name": "NSTP Office",
+        "url": "https://ovcaa.uplb.edu.ph/units/national-service-training-program-office/",
+        "description": "National Service Training Program Office"
+      }
+    ]
+  },
+  {
+    "category": "Units Under OVCCA",
+    "links": [
+      {
+        "name": "UPLB Gender Center",
+        "url": "https://www.facebook.com/UPLBGenderCenter/",
+        "description": "UPLB Gender Center"
+      },
+      {
+        "name": "UHO",
+        "url": "https://uho.uplb.edu.ph/",
+        "description": "University Housing Office. Information on dormitories and housing."
+      },
+      {
+        "name": "SSO / UPF",
+        "url": "https://www.facebook.com/UPLBSSO",
+        "description": "Security and Safety Office / University Police Force"
+      }
+    ]
+  },
+  {
+    "category": "Units Under OVCPD",
+    "links": [
+      {
+        "name": "DIC",
+        "url": "https://dic.uplb.edu.ph",
+        "description": "Digital Innovation Center"
+      },
+      {
+        "name": "UPMO",
+        "url": "https://www.facebook.com/uplbUPMO/",
+        "description": "University Planning and Maintenance Office"
+      }
+    ]
+  },
+  {
+    "category": "Units Under OVCRE",
+    "links": [
+      {
+        "name": "BIOTECH",
+        "url": "https://biotech.uplb.edu.ph/",
+        "description": "National Institute of Molecular Biology and Biotechnology"
+      },
+      {
+        "name": "MNH",
+        "url": "https://mnh.uplb.edu.ph/",
+        "description": "Museum of Natural History"
+      },
+      {
+        "name": "TTBDO",
+        "url": "https://ttbdo.uplb.edu.ph/",
+        "description": "Technology Transfer and Business Development Office"
+      }
+    ]
+  },
+  {
+    "category": "Units Under OVCSA",
+    "links": [
+      {
+        "name": "LRC",
+        "url": "https://www.facebook.com/uplblrc/",
+        "description": "Learning Resource Center"
+      },
+      {
+        "name": "OCG",
+        "url": "https://www.facebook.com/ocgovcsa/",
+        "description": "Office of Counseling and Guidance"
+      },
+      {
+        "name": "OSA",
+        "url": "https://uplbosa.org/",
+        "description": "Office of Student Activities"
+      },
+      {
+        "name": "OSG",
+        "url": "https://www.facebook.com/uplbosg/",
+        "description": "Office of Scholarships and Grants"
+      },
+      {
+        "name": "OSH",
+        "url": "https://www.facebook.com/uplbosh/",
+        "description": "Office of Student Housing"
+      },
+      {
+        "name": "SDT",
+        "url": "https://uplbosa.org/offices-units/SDT",
+        "description": "Student Disciplinary Tribunal"
+      },
+      {
+        "name": "RECOMMIT",
+        "url": "https://www.facebook.com/uplbrecommit/",
+        "description": "Research, Communication and Information Technology"
+      },
+      {
+        "name": "ISR",
+        "url": "https://www.facebook.com/isr.uplb/",
+        "description": "International Student Relations"
+      }
+    ]
+  }
+]
