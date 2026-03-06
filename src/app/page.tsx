@@ -196,7 +196,7 @@ export default function Home() {
                     <span className="font-semibold mx-1">Relevant Webpage.</span>
                   </p>
                   <p className="mt-2 text-xs text-blue-700/80">
-                    <em>NOTE: Some units may not currently have an active website or social media page, and some units are placed directly under main categories (instead of their parent offices) for quicker access.</em>
+                    <em>NOTE: Some units may not currently have an active website or social media page, and some are placed under main categories (instead of their parent offices) for easier access.</em>
                   </p>
                 </div>
               </div>
