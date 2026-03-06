@@ -5,7 +5,7 @@
       {
         "name": "AMIS",
         "url": "https://amis.uplb.edu.ph",
-        "description": "Academic Management Information System"
+        "description": "Academic Management Information System is used for registration and requesting consents."
       },
       {
         "name": "UPLB Main Website",
@@ -50,17 +50,17 @@
       {
         "name": "OVCRE",
         "url": "https://ovcre.uplb.edu.ph",
-        "description": "Office of the Vice Chancellor for Research and Extension."
+        "description": "Office of the Vice Chancellor for Research and Extension"
       },
       {
         "name": "OVCPD",
         "url": "https://www.facebook.com/uplbovcpd/",
-        "description": "Office of the Vice Chancellor for Planning and Development."
+        "description": "Office of the Vice Chancellor for Planning and Development"
       },
       {
         "name": "OVCA",
         "url": "https://ovca.uplb.edu.ph",
-        "description": "Office of the Vice Chancellor for Administration."
+        "description": "Office of the Vice Chancellor for Administration"
       },
       {
         "name": "Main Library",
