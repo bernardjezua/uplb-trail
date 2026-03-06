@@ -50,9 +50,6 @@ export function Navbar() {
           </div>
           
           <div className="flex items-center gap-1.5 sm:gap-4 md:gap-6 text-[11px] sm:text-[13px] md:text-sm font-semibold font-sans tracking-wide">
-            <a href="#about" className="text-zinc-300 hover:text-white transition-colors px-1 sm:px-2 py-1">
-              About
-            </a>
             <a href="https://bernardjezua.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-zinc-300 hover:text-white transition-colors px-1 sm:px-2 py-1">
               Contact
             </a>
