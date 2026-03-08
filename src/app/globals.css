@@ -7,6 +7,7 @@
 @theme inline {
   --color-up-maroon: #6D1533;
   --color-up-green: #014421;
+  --color-up-yellow: #F3AA2C;
   --font-sans: var(--font-inter), Arial, sans-serif;
   --font-heading: var(--font-outfit), Arial, sans-serif;
 

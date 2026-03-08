@@ -162,7 +162,7 @@ export default function Home() {
           </h1>
           <div className="space-y-4 text-sm sm:text-base lg:text-lg leading-relaxed font-heading max-w-2xl mx-auto drop-shadow-sm">
             <p>
-              <strong className="text-white font-bold underline decoration-up-maroon decoration-2 underline-offset-4">TRAIL</strong> (Terminal for Resource Access and Information Links) was built to solve the hassle of looking at social media, outdated directories, and search engine clutter. Every link is instantly searchable to save your time.
+              <strong className="text-white font-bold underline decoration-up-yellow decoration-2 underline-offset-4">TRAIL</strong> (Terminal for Resource Access and Information Links) was built to solve the hassle of looking at social media, outdated directories, and search engine clutter. Every link is instantly searchable to save your time.
             </p>
           </div>
         </div>
