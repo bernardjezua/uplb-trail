@@ -72,15 +72,21 @@ export default function Home() {
       
       // Rule 6: Relevance Scoring
       // Fuse score is 0 to 1 (0 is best). We'll invert or adjust it.
-      let finalScore = result.score || 1;
+      // Fix: Use ?? instead of || to avoid treating a perfect 0 score as falsy (which would default it to 1)
+      let finalScore = result.score ?? 0;
 
       // Rule 1 & 2: Prioritize Exact/Word matches in Name
       if (name === trimmedQuery) {
-        finalScore *= 0.001; // Massive boost for exact full name match
-      } else if (name.includes(trimmedQuery)) {
-        finalScore *= 0.1; // Big boost for substring match in name
-      } else if (tokens.every(t => name.includes(t) || desc.includes(t))) {
-        finalScore *= 0.5; // Boost if all tokens are matched across name/description
+        finalScore = (finalScore + 0.01) * 0.0001; // Massive boost for exact full name match
+      } else {
+        const wordRegex = new RegExp(`\\b${trimmedQuery}\\b`, 'i');
+        if (wordRegex.test(name)) {
+          finalScore = (finalScore + 0.01) * 0.01; // Big boost for exact word match in name
+        } else if (name.includes(trimmedQuery)) {
+          finalScore = (finalScore + 0.01) * 0.1; // Substring match boost
+        } else if (tokens.length > 0 && tokens.every(t => name.includes(t) || desc.includes(t))) {
+          finalScore = (finalScore + 0.01) * 0.5; // Boost if all tokens match across name/description
+        }
       }
 
       // Rule 5: Prefix matching boost
