@@ -63,6 +63,11 @@
         "description": "Office of the Vice Chancellor for Administration"
       },
       {
+        "name": "OVCIEM",
+        "url": "https://www.facebook.com/profile.php?id=61583044996891",
+        "description": "Office of the Vice Chancellor for Innovation and Enterprise Management"
+      },
+      {
         "name": "Main Library",
         "url": "https://library.uplb.edu.ph",
         "description": "University Library and online database access."
@@ -136,6 +141,11 @@
         "name": "GS",
         "url": "https://gs.uplb.edu.ph",
         "description": "Graduate School (Masters and PhD programs)"
+      },
+      {
+        "name": "SESAM",
+        "url": "https://sesam.uplb.edu.ph/",
+        "description": "School of Environmental Science and Management"
       }
     ]
   },
@@ -605,6 +615,46 @@
     ]
   },
   {
+    "category": "Departments, Institutes & Units Under SESAM",
+    "links": [
+      {
+        "name": "CDRSC",
+        "url": "https://sesam.uplb.edu.ph/research-labs/climate-and-disaster-risk-studies-center-cdrsc/",
+        "description": "Climate and Disaster Risk Studies Center"
+      },
+      {
+        "name": "EaRT",
+        "url": "https://www.facebook.com/earthsystemsresearchteam",
+        "description": "Earth Systems Research Team"
+      },
+      {
+        "name": "Ecotox Lab",
+        "url": "http://facebook.com/UPLBSESAM.EcotoxLab",
+        "description": "A research laboratory handling studies on inorganic and organic pollutants."
+      },
+      {
+        "name": "ESEP",
+        "url": "https://www.facebook.com/ESEPLaboratory",
+        "description": "Ecosystems Services and Environmental Policy"
+      },
+      {
+        "name": "IdSC Water Center",
+        "url": "https://uplb-idscwater.wixsite.com/watercenter",
+        "description": "Interdisciplinary Studies Center for Water"
+      },
+      {
+        "name": "Landscape Ecology Lab",
+        "url": "https://www.facebook.com/LandscapeEcoLab.UPLBSESAM",
+        "description": "A research laboratory that focuses on the understanding of landscapes."
+      },
+      {
+        "name": "SESAM Library",
+        "url": "https://www.facebook.com/SesamUplbLibrary",
+        "description": "School of Environmental Science and Management Library"
+      }
+    ]
+  },
+  {
     "category": "Units Under OC",
     "links": [
       {
@@ -643,11 +693,6 @@
         "description": "Quality Assurance Office"
       },
       {
-        "name": "OVCIEM",
-        "url": "https://www.facebook.com/profile.php?id=61583044996891",
-        "description": "Office of the Vice Chancellor for Innovation and Enterprise Management"
-      },
-      {
         "name": "Ugnayan ng Pahinungod",
         "url": "https://pahinungod.uplb.edu.ph/",
         "description": "The official volunteer service arm of UPLB."
@@ -663,11 +708,6 @@
         "description": "UPLB Accounting Office"
       },
       {
-        "name": "Business Affairs Office",
-        "url": "https://www.facebook.com/UPLBBusinessAffairsOffice/",
-        "description": "UPLB Business Affairs Office"
-      },
-      {
         "name": "Cashier's Office",
         "url": "https://www.facebook.com/UPLBCashiersOffice/",
         "description": "UPLB Cashier's Office"
@@ -676,6 +716,11 @@
         "name": "HRDO",
         "url": "https://hrdo.uplb.edu.ph/",
         "description": "Human Resources Development Office"
+      },
+      {
+        "name": "PrMO",
+        "url": "https://prmo.uplb.edu.ph/",
+        "description": "Procurement Management Office"
       },
       {
         "name": "RMO",
@@ -730,6 +775,21 @@
     ]
   },
   {
+    "category": "Units Under OVCIEM",
+    "links": [
+      {
+        "name": "BAO",
+        "url": "https://www.facebook.com/UPLBBusinessAffairsOffice/",
+        "description": "UPLB Business Affairs Office"
+      },
+      {
+        "name": "TTBDO",
+        "url": "https://ttbdo.uplb.edu.ph/",
+        "description": "Technology Transfer and Business Development Office"
+      }
+    ]
+  },
+  {
     "category": "Units Under OVCPD",
     "links": [
       {
@@ -758,9 +818,14 @@
         "description": "Museum of Natural History"
       },
       {
-        "name": "TTBDO",
-        "url": "https://ttbdo.uplb.edu.ph/",
-        "description": "Technology Transfer and Business Development Office"
+        "name": "PGC Agriculture",
+        "url": "https://www.facebook.com/pgc.agriculture",
+        "description": ""
+      },
+      {
+        "name": "ZC",
+        "url": "https://zoonoses.uplb.edu.ph/",
+        "description": "Zoonoses Center"
       }
     ]
   },
