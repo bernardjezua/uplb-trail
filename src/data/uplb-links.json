@@ -16,6 +16,11 @@
         "name": "UP Mail",
         "url": "https://mail.up.edu.ph",
         "description": "Access to your official UP Email account (@up.edu.ph)."
+      },
+      {
+        "name": "UPLB Directory",
+        "url": "https://directory.uplb.edu.ph/",
+        "description": "Official UPLB contact information directory."
       }
     ]
   },
@@ -71,11 +76,6 @@
         "name": "Main Library",
         "url": "https://library.uplb.edu.ph",
         "description": "University Library and online database access."
-      },
-      {
-        "name": "UPLB Directory",
-        "url": "https://directory.uplb.edu.ph/",
-        "description": "Official UPLB contact information directory."
       },
       {
         "name": "UHS",
