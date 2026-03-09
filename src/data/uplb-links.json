@@ -843,9 +843,14 @@
         "description": "Office of Counseling and Guidance"
       },
       {
-        "name": "OSA",
+        "name": "OSA Website",
         "url": "https://uplbosa.org/",
-        "description": "Office of Student Activities"
+        "description": "Office of Student Activities Website"
+      },
+      {
+        "name": "OSA FB Page",
+        "url": "https://www.facebook.com/uplbosa.ovcsa/",
+        "description": "Office of Student Activities Facebook Page"
       },
       {
         "name": "OSG",
