@@ -22,7 +22,7 @@ export function DirectoryCard({ item }: DirectoryCardProps) {
       {/* Subtle branded border effect on hover - solid maroon tint instead of maroon-to-green gradient */}
       <div className="absolute -inset-0.5 bg-up-maroon/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-[2px] -z-10"></div>
       
-      <Card className="h-full bg-white group-hover:bg-up-maroon/5 transition-colors duration-300 border-zinc-200/60 rounded-xl flex flex-col relative overflow-hidden z-10">
+      <Card className="h-full bg-white group-hover:bg-red-50 transition-colors duration-300 border-zinc-200/60 rounded-xl flex flex-col relative overflow-hidden z-10">
         {/* Accent left border */}
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-up-maroon"></div>
 
